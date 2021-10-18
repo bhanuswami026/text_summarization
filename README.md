@@ -28,3 +28,6 @@ Both the parts are practically two different neural network models combined into
 Below is a typical Seq2Seq model architecture:
 ![alt text](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/final.jpg)
 
+Broadly, the task of an encoder network is to understand the input sequence, and create a smaller dimensional representation of it. This representation is then forwarded to a decoder network which generates a sequence of its own that represents the output. 
+
+The Encoder-Decoder architecture is mainly used to solve the sequence-to-sequence (Seq2Seq) problems where the input and output sequences are of different lengths. Generally, variants of Recurrent Neural Networks (RNNs), i.e. Gated Recurrent Neural Network (GRU) or Long Short Term Memory (LSTM), are preferred as the encoder and decoder components. This is because they are capable of capturing long term dependencies by overcoming the problem of vanishing gradient.
